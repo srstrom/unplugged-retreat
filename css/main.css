@@ -86,6 +86,10 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   .content-wrapper {
+    width: 90%;
+    margin: 50px 0;
+  }
 
    /*-------------Base header/footer styles for all pages---------------*/
 
@@ -97,15 +101,24 @@ textarea {
     flex-flow: row wrap;
   }
 
+  /*-------------Header styles-------------------------------------*/
+  header {
+    padding: 15px 0;
+  }
+
   header .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
+    margin: 0;
   }
 
   .header-divider {
-
+    width: 100%;
+    height: 1px;
+    margin: 10px 0 20px 0;
   }
 
   header nav {
@@ -113,6 +126,7 @@ textarea {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
   
   }
 
@@ -120,13 +134,21 @@ textarea {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+    width: 44%;
+  }
+
+/*------------------Footer styles----------------*/
+  footer p {
+    margin: 0;
   }
 
   footer .content-wrapper {
     display: flex;
     justify-content: space-around;
     align-items: center;
-  }
+    width: 55%;
+    margin: 50px 0;
+    }
 
   .footer-content {
 
@@ -152,8 +174,8 @@ textarea {
     align-items: center;
   }
 
-  .copyright {
-
+  footer .copyright {
+    margin: 20px 0;
   }
 
 
@@ -161,7 +183,8 @@ textarea {
   hero-area {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-flow: row wrap;
+   
   }
 
   aside {
@@ -171,10 +194,24 @@ textarea {
     flex-flow: row wrap;
   }
 
+
   features {
     display: flex;
     justify-content: center;
-    align-items: center;
+    flex-flow: row wrap;
+  }
+
+  .features h2 {
+    margin-bottom: 60px;
+  }
+
+  features .article {
+    width: 63%;
+    margin: 30px 0;
+  }
+
+  features p {
+    margin: 0;
   }
 
   features .features-items {
@@ -182,12 +219,19 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    
   }
+
 
   .reviews {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
+  }
+
+  .reviews h3 {
+    width: 55%;
+    margin: 20px 0;
   }
 
 
@@ -206,6 +250,10 @@ textarea {
     flex-flow: row wrap;
   }
 
+  .contact-content p {
+    margin: 0;
+  }
+
  /*---------------FAQ styles only---------------*/
  .faq {
   display: flex;
@@ -215,50 +263,20 @@ textarea {
  }
 
  faq .content-wrapper {
+  margin: 50px 0 0 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- /*----------------About page styles only-------------*/
- .mission {
-
+ .faq h2 {
+  margin-bottom: 40px;
 }
 
-.contact-section {
-
+.faq-content {
+  margin-bottom: 50px;
 }
-
- /*----------------FAQ page styles only---------------*/
-
- faq {
-
- }
-
- faq .content-wrapper {
-
- }
 
 
 /* ==========================================================================
