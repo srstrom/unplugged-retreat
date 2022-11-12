@@ -180,7 +180,7 @@ textarea {
 
 
   /*---------------Homepage styles only---------------*/
-  hero-area {
+  .hero-area {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
@@ -195,13 +195,14 @@ textarea {
   }
 
 
-  features {
+  .features {
     display: flex;
     justify-content: center;
     flex-flow: row wrap;
   }
 
   .features h2 {
+    width: 83%;
     margin-bottom: 60px;
   }
 
@@ -367,10 +368,107 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+
+  .content-wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+  }
+
+
+ /*Header styles*/ 
+.header {
+  display: flex;
+  justify-content: flex-start;
 }
 
+.header .content-wrapper {
+  width: 100%;  
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-divider {
+  display: none;
+}
+
+
+/*Aside styles*/
+aside .content-wrapper {
+  margin: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row nowrap;
+}
+
+aside .content-wrapper .form-description, 
+aside .content-wrapper .form {
+  width: 50%;
+  margin: 0; 
+  
+}
+
+
+/*Features styles*/
+.features article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 50%;
+  }
+}
+
+.features .features-items-description { 
+  width: 50%;
+  margin: 0; 
+}
+
+
+
+
+/*Reviews styles*/
+.reviews article {
+  display: flex;
+  justify-content: ;
+}
+
+.reviews article div {
+  width: 100%;
+}
+
+
+/*Footer styles*/
+.footer-content-wrapper {
+  width: 78%;
+  margin: 100px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: ;
+  align-items: ;
+}
+
+footer .contact {
+  margin-bottom: 0;
+}
+
+foooter .copyright {
+  width: 30%;
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+}
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
