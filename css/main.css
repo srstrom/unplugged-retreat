@@ -181,7 +181,6 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    width: 60%;
     margin: 0;
   }
 
@@ -197,6 +196,7 @@ textarea {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+   
   
   }
 
@@ -204,22 +204,25 @@ textarea {
     display: flex;
     justify-content: space-around;
     list-style-type: none;
-    width: 44%;
+    width: 100%;
   }
 
 /*------------------Footer styles----------------*/
-  footer p {
+footer {
+  flex-direction: column;
+}  
+
+footer p {
     margin: 0;
   }
 
   footer .content-wrapper {
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
+    width: 55%;
     margin: 50px 0;
     }
 
   .footer-content {
+   margin-bottom: 50px;
   }
   
   .contact {
@@ -297,7 +300,11 @@ textarea {
     justify-content: center;
     flex-flow: row wrap;
   }
-
+  
+  .reviews h2 {
+    margin-bottom: 40px;
+  }
+  
   .reviews h3 {
     width: 55%;
     margin: 20px 0;
@@ -347,6 +354,35 @@ textarea {
   margin-bottom: 50px;
 }
 
+/*===========================================================================
+Homepage form
+=============================================================================*/
+
+aside .form {
+  margin-top: 30px;
+}
+ 
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+ 
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
 
 /* ==========================================================================
    Helper classes
