@@ -105,6 +105,7 @@ textarea {
    font-size: 1em;
    font-weight: bold;
    text-transform: uppercase;
+   list-style-type: none;
   }
    
   a {
@@ -112,10 +113,17 @@ textarea {
     text-decoration: none;
     
   }
-   
+  
+  h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 3em;
+    font-weight: normal;
+    color: #e2e3ed; 
+  }
+
   h2 {
    font-family: 'Poppins', sans-serif;
-   font-size: 1.875em;
+   font-size: 2em;
    font-weight: normal;
    color: #e2e3ed;
   }
@@ -123,17 +131,20 @@ textarea {
   h3, 
   h4 {
    font-family: 'Poppins', sans-serif;
-   font-size: 1.2em;
+   font-size: 1.5em, .875em;
    color: #e2e3ed;
    font-weight: normal;
    margin: 20px 0;
+   text-align: center;
+  
   }
    
   p {
     font-family: 'Open Sans', sans-serif;
     font-size: .87em;
     color: #e2e3ed;
-    line-height: 1.28em;
+    line-height: 1.5em;
+    text-align: center;
     
   }
    
@@ -168,7 +179,7 @@ textarea {
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
-    background-color: #000;
+    background-color: #202332;
   }
 
   /*-------------Header styles-------------------------------------*/
@@ -203,7 +214,6 @@ textarea {
   header nav ul {
     display: flex;
     justify-content: space-around;
-    list-style-type: none;
     width: 100%;
   }
 
@@ -223,6 +233,7 @@ footer p {
 
   .footer-content {
    margin-bottom: 50px;
+   text-align: center;
   }
   
   .contact {
@@ -247,6 +258,7 @@ footer p {
 
   footer .copyright {
     margin: 20px 0;
+    text-align: center;
   }
 
 
@@ -273,7 +285,7 @@ footer p {
   }
 
   .features h2 {
-    width: 83%;
+    width: 88%;
     margin-bottom: 60px;
   }
 
@@ -493,11 +505,12 @@ input[type=button] {
     }
   
     header nav {
-      width: 20%;
+      width: 25%;
+      justify-content: space-between;
     }
   
     header nav ul {
-      justify-content: space-between;
+      
     }
   
     .header-divider {
@@ -529,7 +542,7 @@ input[type=button] {
     }
     
     .features .features-item-description {
-      width: 62%;
+      width: 64%;
     }
   
     /* Reviews */
