@@ -344,20 +344,37 @@
     /*---------------About styles only---------------*/
     .mission {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-flow: row wrap;
+    }
+
+    .mission p {
+      font-family: 'Open Sans', sans-serif;
+      font-size: .87em;
+      color: #e2e3ed;
+      line-height: 1.5em;
+      text-align: left;
     }
   
     .contact-section {
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
       flex-flow: row wrap;
     }
+
+    .contact-section h3 {
+      color: #ffffff;
+      text-align: left;
+    }
   
-    .contact-content p {
+    .contact-content address {
       margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-size: .87em;
+      color: #e2e3ed;
+      line-height: 1.5em;
     }
   
    /*---------------FAQ styles only---------------*/
@@ -523,21 +540,24 @@
   
       header .content-wrapper {
         width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
       }
     
       header nav {
-        width: 25%;
+        width: 28%;
         justify-content: space-between;
       }
     
       header nav ul {
-        
+        justify-content: space-between;
       }
     
       .header-divider {
         display: none;
       }
+
+      
+      /*--------------------Homepage-----------------*/
   
       /* Hero Area */
       
@@ -612,25 +632,39 @@
     
       .mission-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         padding-top: 20px;
+        flex-flow: row wrap;
       }
     
+      .mission-content h2 {
+        width: 80%;
+      }
       .mission-content p {
-        width: 45%;
+        width: 48%;
       }
     
+      .contact-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        flex-flow: row wrap;
+      }
+
       .contact-section .content-wrapper h2 {
         width: 80%;
       }
     
       .contact-content {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: flex-start;
       }
     
+      
+
       /* ==========================================================================
        FAQ Page
        ========================================================================== */
